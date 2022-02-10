@@ -1,0 +1,117 @@
+\documentclass[12pt,oneside,a4paper,fleqn]{ctexart}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{titletoc}
+\usepackage{titlesec}
+\usepackage{ctex}
+
+\renewcommand{\abstractname}{\textbf{
+    {\zihao{2}题目：$\times \times \times $标题}\\
+    \vspace*{1.5em}
+\zihao{4}摘\quad 要 \vspace*{0.5em}}}%自定义摘要
+\renewcommand{\contentsname}{\zihao{3} \heiti{目\quad 录} \vspace{0.5em}}%自定义目录
+\geometry{left=2.1cm,right=1.8cm,top=2.6cm,bottom=1.3cm} % 页边距设置[width=10.5cm,height=2.25cm]
+%%%%%%%%%%%%%%%%%%%%%%%%自定义目录样式%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlecontents{section}[1cm]{\bf \zihao{-4}}{\contentslabel{2.5em}}{}{\titlerule*[0.5pc]{$\cdots$}\contentspage\hspace*{1cm}}
+\titlecontents{subsection}[2cm]{\zihao{-4}}{\contentslabel{2.5em}}{}{\titlerule*[0.5pc]{$\cdots$}\contentspage\hspace*{1cm}}
+\titlecontents{subsubsection}[3cm]{\zihao{-4}}{\contentslabel{2.5em}}{}{\titlerule*[0.5pc]{$\cdots$}\contentspage\hspace*{1cm}}
+%%%%%%%%%%%%%%%%%%%%%%%%自定义section样式%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%准备结束%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%标题页开始%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{titlepage}
+        \heiti
+        \ 
+        \vspace{3em}
+        \begin{center}
+            \includegraphics{figure/1}\newline
+            {\zihao{0}课程设计（论文）}\\
+            \vspace{15em}
+            \noindent\makebox[70pt][c]{\zihao{-3}课程名称：}\ \ \underline{\makebox[10em]{\zihao{4}$\times \times \times $}}\\
+            \vspace{1em}
+            \makebox[70pt][s]{\zihao{-3}题目：}\ \ \underline{\makebox[10em]{\zihao{4} $\times \times \times $}}\\
+            \vspace{1em}
+            \makebox[70pt][s]{\zihao{-3}院(系)：}\ \ \underline{\makebox[10em]{\zihao{4} $\times \times \times $工程学院}}\\
+            \vspace{1em}
+            \makebox[70pt][s]{\zihao{-3}专业班级：}\ \ \underline{\makebox[10em]{\zihao{4}$\times \times \times $}}\\
+            \vspace{1em}
+            \makebox[70pt][s]{\zihao{-3}姓名：}\ \ \underline{\makebox[10em]{\zihao{4}$\times \times \times $}}\\
+            \vspace{1em}
+            \makebox[70pt][s]{\zihao{-3}学号：}\ \ \underline{\makebox[10em]{\zihao{4} $\times \times \times $}}\\
+            \vspace{1em}
+            \makebox[70pt][s]{\zihao{-3}指导教师：}\ \ \underline{\makebox[10em]{\zihao{4}$\times \times \times $}}\\
+            \vspace{10em}
+            {\zihao{4}2022年1月5号}
+        \end{center}
+    \end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%标题页结束%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%摘要页开始%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+    \thispagestyle{empty}
+    \addcontentsline{toc}{section}{摘要}
+    \songti
+    \zihao{-4}
+    \begin{spacing}{1.25}
+        摘要又称概要、内容提要，意思是摘录要点或摘录下来的要点。 [1]  摘要是以提供文献内容梗概为目的，不加评论和补充解释，简明、确切地记述文献重要内容的短文。其基本要素包括研究目的、方法、结果和结论。具体地讲就是研究工作的主要对象和范围，采用的手段和方法，得出的结果和重要的结论，有时也包括具有情报价值的其它重要的信息。
+        \newline
+        \newline
+        \textbf{关键字：}{$\times \times \times $}
+    \end{spacing}
+    \pagenumbering{Roman}
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%摘要页结束%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%目录页开始%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\pagenumbering{arabic}
+
+
+
+
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%目录页结束%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%正文开始%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1}
+
+\vspace{0.5em} \section{\heiti $\times \times \times $} \vspace{0.5em}
+
+
+\vspace{0.5em} \subsection{\heiti $\times \times \times $}
+
+
+\vspace{0.5em} \subsection{\heiti $\times \times \times $}
+
+
+\vspace{0.5em} \subsection{\heiti $\times \times \times $}
+
+
+\vspace{0.5em} \section{\heiti $\times \times \times $} \vspace{0.5em}
+
+
+\vspace{0.5em} \subsection{\heiti $\times \times \times $}
+
+
+\vspace{0.5em} \subsection{\heiti $\times \times \times $}
+
+
+\vspace{0.5em} \subsection{\heiti $\times \times \times $}
+
+
+\vspace{0.5em} \section*{\heiti 参考文献} \vspace{0.5em}
+\addcontentsline{toc}{section}{参考文献}
+
+\vspace{0.5em} \section*{\heiti 附录} \vspace{0.5em}
+\addcontentsline{toc}{section}{附录}
+
+\vspace{0.5em} \section*{\heiti 致谢} \vspace{0.5em}
+\addcontentsline{toc}{section}{致谢}
+
+\end{document}
